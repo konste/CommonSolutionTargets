@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonSolutionTargets", "CommonSolutionTargets\CommonSolutionTargets.csproj", "{8FFB054D-F81F-4D2A-B32F-29586E12726D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{ED39DFF5-4F67-4AE4-B643-7567144DE8A6}"
+	ProjectSection(SolutionItems) = preProject
+		..\Example\after.Example.sln.targets = ..\Example\after.Example.sln.targets
+		..\Example\Common.Project.targets = ..\Example\Common.Project.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

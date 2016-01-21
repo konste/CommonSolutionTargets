@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="BeforeBuild" BeforeTargets="Build;Rebuild" >
+    <Message Text="Solution Build Started" Importance="High"/>
+    <PropertyGroup>
+      <!-- It is important for CustomAfterMicrosoftCommontargets to be absolute path, not relative -->
+      <CustomAfterMicrosoftCommontargets>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)Common.Project.targets'))</CustomAfterMicrosoftCommontargets>
+    </PropertyGroup>
+  </Target>
+  <Target Name="AfterBuild" AfterTargets="Build;Rebuild" >
+    <!-- We get here still before the build, not after, because this whole targets file is executed before the build. -->
+  </Target>
+  
+  <!-- All four standard targets must be present, otherwise VS barfs. -->
+  <Target Name="Build">
+    <Message Text="Solution Build target" Importance="High"/>
+  </Target>
+  <Target Name="Rebuild">
+    <Message Text="Solution Rebuild target" Importance="High"/>
+  </Target>
+  <Target Name="Clean">
+  </Target>
+  <Target Name="Publish">
+  </Target>
+</Project>
