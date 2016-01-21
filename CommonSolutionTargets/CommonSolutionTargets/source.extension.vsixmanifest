@@ -3,7 +3,7 @@
   <Metadata>
     <Identity Id="CommonSolutionTargets.Konstantin Erman.db029439-8f14-49be-9517-b40d2c0c61fb" Version="1.0" Language="en-US" Publisher="Konstantin Erman" />
     <DisplayName>CommonSolutionTargets</DisplayName>
-    <Description xml:space="preserve">Place a targets file named "after.&lt;SolutionName&gt;.sln.targets " near your solution file (.sln) and it will be invoked every time Visual Studio starts building your solution. This is very convenient for global MSBuild properties, common fragments for all project files and any pre build activity.</Description>
+    <Description xml:space="preserve">Place a targets file named "after.&lt;SolutionName&gt;.sln.targets " near your solution file (.sln) and it will be invoked every time Visual Studio starts building your solution. This is very convenient for global MSBuild properties and common fragments for project files.</Description>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[11.0, 14.0]" />
